@@ -1,2 +1,2 @@
-# ResponsiveWebDesignProjects-TributePage
+# ResponsiveWebDesignProjects
 Build a Tribute Page (FCC)
