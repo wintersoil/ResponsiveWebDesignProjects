@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+  margin:0px 0px 0px 0px;
+  font-family: 'Open Sans';
+}
+.container-welcome {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+#navbar {
+  position: fixed;
+  width:100vw;
+  background-color: lightblue;
+  display:flex;
+  justify-content: flex-end;
+}
+.list {
+  width:400px;
+  display: flex;
+  justify-content:space-between;
+  margin-right: 40px;
+}
+li{
+  list-style-type: none;
+  display: inline;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+#welcome-section {
+  height: 100vh;
+  background:lightgreen;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align: center;
+}
+.griddy {
+  display: grid;
+  grid-template-columns: 1fr auto 200px auto 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 80px;
+  grid-template-areas: ". a a a ."
+    ". b . c ."
+    ". d . e ."
+    ". f . g .";
+}
+.a {
+  grid-area: a;
+  /*border: solid 2px green;*/
+  text-align: center;
+  color: gray;
+}
+.b {
+  grid-area: b;
+  text-align: center;
+  border: solid 2px teal;
+}
+.c {
+  grid-area: c;
+  text-align: center;
+  border: solid 2px teal;
+}
+.d {
+  grid-area: d;
+  text-align: center;
+  border: solid 2px teal;
+}
+.e {
+  grid-area: e;
+  text-align: center;
+  border: solid 2px teal;
+}
+.border-teal {
+  border-top: solid 2px teal;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:100vh;
+  text-align: center;
+  background-color: turquoise;
+  align-items:center;
+}
+.buttonss {
+  margin-top: 40px;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.rounded {
+  border-radius:50%;
+  border: solid 2px teal;
+  width:100px;
+  height:100px;
+  text-align: center;
+  color: teal;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+.rounded:hover {
+  background-color:lightblue;
+}
+footer {
+  padding:15px 0px 30px 0px;
+  text-align:center;
+  color: white;
+  background-color:#3D66A1;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
